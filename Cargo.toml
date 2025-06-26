@@ -23,15 +23,15 @@ color-eyre = { version = "0.6", features = [
   "tracing-error",
 ] }
 thiserror = "2.0.12"
-tracing-forest = { version = "0.1.6", features = ["ansi", "ansi_term", "chrono", "env-filter", "full","uuid","tokio","serde"] }
+# tracing-forest = { version = "0.1.6", features = ["ansi", "ansi_term", "chrono", "env-filter", "full","uuid","tokio","serde"] }
 uuid={version = "1.17.0",features = ["v4"]}
 log = { version = "0.4", features = ["serde"] }
 reqwest = { version = "0.12.20", features = ["json", "stream"] }
 
 
-serde_v8 = {version = "0.260.0"}
+serde_v8 = {version = "0.261.0"}
 # deno_ast = { version = "0.48", features = ["transpiling"] }  # Temporarily disabled due to API compatibility
-deno_core = "0.351"
+deno_core = "0.352"
 owo-colors = { version = "4.2.2", features = ["supports-colors", "alloc"] }
 tracing-futures = { version = "0.2.5", features = ["tokio"] }
 tracing-tree = { version = "0.4.0", features = ["time"] }

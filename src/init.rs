@@ -3,7 +3,6 @@ use tracing::instrument;
 use tracing_subscriber::prelude::*;
 use tracing_subscriber::{layer::SubscriberExt, util::SubscriberInitExt};
 
-use tracing_forest::{traits::*, util::*};
 
 use crate::errors::AppError;
 
@@ -13,33 +12,6 @@ pub fn init() -> Result<(), AppError> {
     install_tracing();
 
     color_eyre::install()?;
-    //  color_eyre::config::HookBuilder::new()
-    //     .theme(theme())
-    //     .install()
-    //     .expect("Failed to install `color_eyre`");
-
-    //     color_eyre::config::HookBuilder::default()
-    //         .add_frame_filter(Box::new(|frames| {
-    //             let filters = &["custom_filter::main","tokio","core"];
-
-    //             frames.retain(|frame| {
-    //                 !filters.iter().any(|f| {
-    //                     let name = if let Some(name) = frame.name.as_ref() {
-    //                         name.as_str()
-    //                     } else {
-    //                         return true;
-    //                     };
-    // name.starts_with(f)
-    //                     // name.starts_with(f)
-    //                 })
-    //             });
-    //         }))
-    //         .install()
-    //         .unwrap();
-
-    //  println!("{:?}", get_error_wrapper_2("test"));
-
-    //    let r= will_fail4(1)?;
 
     Ok(())
 }
@@ -55,14 +27,8 @@ fn install_tracing() {
         // .or_else(|_| EnvFilter::try_new("info")) .unwrap();
         .unwrap_or_else(|_| "ts_engine_rs=debug,info".into());
 
-    let tag = tracing_forest::Tag::builder()
-        .prefix("security")
-        .suffix("critical")
-        .icon('🔐')
-        .build();
 
-    // let forest_layer=ForestLayer::default();
-    // let forest_layer = ForestLayer::new(tracing_forest::PrettyPrinter::new(), log_tag);
+
     let forest_layer = tracing_tree::HierarchicalLayer::default()
         .with_writer(std::io::stdout)
         .with_indent_lines(true)

@@ -1,12 +1,12 @@
 use color_eyre::Report;
 use std::fmt::{Debug, Display};
 // use deno_core::error::format_location;
-use tracing::Span;
+use tracing::{error, Span};
 #[allow(unused)]
 use tracing_subscriber::prelude::*;
 
 pub use color_eyre::eyre::{Context, Result, anyhow};
-use tracing_forest::util::*;
+// use tracing_forest::util::*;
 
 #[derive(Debug, thiserror::Error)]
 pub enum AppError {

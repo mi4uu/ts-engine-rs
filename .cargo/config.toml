@@ -1,0 +1,40 @@
+# [target.aarch64-apple-darwin]
+[build]
+rustflags = ["-A", "warnings"]
+rustc-wrapper = "sccache"
+
+# [unstable]
+# codegen-backend = true
+
+# [profile.dev]
+# codegen-backend = "cranelift"
+
+[env]
+
+#[target.aarch64-apple-darwin]
+#rustflags = [ 
+# "-C",
+# "link-arg=-fuse-ld=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld",
+# "-C",
+# "link-arg=-ld_new",
+# "-C", "link-arg=-fuse-ld=<path>/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld-prime",
+
+#]
+# RUSTFLAGS="-C link-arg=-fuse-ld=lld"
+# SCCACHE_DIRECT = "true"
+# RUSTFLAGS = "-D warnings"
+
+# RUSTFLAGS="-C link-arg=-fuse-ld=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -C link-arg=-ld_new"
+#RUST_BACKTRACE = "1"
+#RUST_LOG = "trace"
+WORKSPACE_ROOT_DIR = { value = "", relative = true }
+CRATES_ROOT_DIR = { value = "crates/", relative = true }
+# ASSETS_DIR = { value = "static/assets", relative = true }
+# DOWNLOADED_BINS_DIR = { value = "static/.bin", relative = true }
+# MIGRATIONS_DIR = { value = "migrations", relative = true }
+# CONFIG_ROOT_DIR = { value = "config/", relative = true }
+# OUT_DIR = { value = "target/out", relative = true }
+# LOGS_DIR = { value = "target/logs", relative = true }
+
+[alias]
+dev = "watch -x run"
