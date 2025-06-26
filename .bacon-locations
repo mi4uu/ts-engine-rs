@@ -1,0 +1,560 @@
+warning|:|src/errors.rs|:|47|:|47|:|9|:|14|:|unused doc comment|:|[0m[1m[33mwarning[0m[0m[1m: unused doc comment[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/errors.rs:46:9[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m46[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m        ///SPANDOC: hope it wil work[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m         [0m[0m[1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m[1m[38;5;12m47[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m        &self[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m         [0m[0m[1m[38;5;12m-----[0m[0m [0m[0m[1m[38;5;12mrustdoc does not generate documentation for expressions[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: use `//` for a plain comment[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(unused_doc_comments)]` on by default[0m
+
+|:|none
+warning|:|src/errors.rs|:|46|:|46|:|9|:|37|:|unused doc comment|:|[0m[1m[33mwarning[0m[0m[1m: unused doc comment[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/errors.rs:46:9[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m46[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m        ///SPANDOC: hope it wil work[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m         [0m[0m[1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m[1m[38;5;12m47[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m        &self[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m         [0m[0m[1m[38;5;12m-----[0m[0m [0m[0m[1m[38;5;12mrustdoc does not generate documentation for expressions[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: use `//` for a plain comment[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(unused_doc_comments)]` on by default[0m
+
+|:|none
+warning|:|src/init.rs|:|6|:|6|:|22|:|28|:|unused import: `traits`|:|[0m[1m[33mwarning[0m[0m[1m: unused import: `traits`[0m
+[0m [0m[0m[1m[38;5;12m--> [0m[0msrc/init.rs:6:22[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m6[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0muse tracing_forest::{traits::*, util::*};[0m
+[0m  [0m[0m[1m[38;5;12m|[0m[0m                      [0m[0m[1m[33m^^^^^^[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m  [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(unused_imports)]` on by default[0m
+
+|:|none
+warning|:|src/errors.rs|:|39|:|39|:|13|:|22|:|unused variable: `curr_span`|:|[0m[1m[33mwarning[0m[0m[1m: unused variable: `curr_span`[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/errors.rs:39:13[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m39[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m        let curr_span = Span::current();[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m             [0m[0m[1m[33m^^^^^^^^^[0m[0m [0m[0m[1m[33mhelp: if this is intentional, prefix it with an underscore: `_curr_span`[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(unused_variables)]` on by default[0m
+
+|:|none
+help|:|src/errors.rs|:|39|:|39|:|13|:|22|:|if this is intentional, prefix it with an underscore|:|none|:|_curr_span
+warning|:|src/init.rs|:|58|:|58|:|9|:|12|:|unused variable: `tag`|:|[0m[1m[33mwarning[0m[0m[1m: unused variable: `tag`[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/init.rs:58:9[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m58[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let tag = tracing_forest::Tag::builder()[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m         [0m[0m[1m[33m^^^[0m[0m [0m[0m[1m[33mhelp: if this is intentional, prefix it with an underscore: `_tag`[0m
+
+|:|none
+help|:|src/init.rs|:|58|:|58|:|9|:|12|:|if this is intentional, prefix it with an underscore|:|none|:|_tag
+warning|:|src/main.rs|:|104|:|104|:|1|:|42|:|unreachable statement|:|[0m[1m[33mwarning[0m[0m[1m: unreachable statement[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:83:17[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m83[0m[0m  [0m[0m[1m[38;5;12m|[0m[0m [0m[0m                return Err(AppError::with_msg("thats too much"));[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m                 [0m[0m[1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[33munreachable statement[0m
+[0m[1m[38;5;12m...[0m
+[0m[1m[38;5;12m104[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mmake_somefnresult!(testfnx, testfn02x, 5);[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m-----------------------------------------[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12many code following this expression is unreachable[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12min this macro invocation[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(unreachable_code)]` on by default[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: this warning originates in the macro `make_somefnresult` (in Nightly builds, run with -Z macro-backtrace for more info)[0m
+
+|:|none
+warning|:|src/main.rs|:|82|:|82|:|9|:|33|:|unreachable statement|:|[0m[1m[33mwarning[0m[0m[1m: unreachable statement[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:83:17[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m83[0m[0m  [0m[0m[1m[38;5;12m|[0m[0m [0m[0m                return Err(AppError::with_msg("thats too much"));[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m                 [0m[0m[1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[33munreachable statement[0m
+[0m[1m[38;5;12m...[0m
+[0m[1m[38;5;12m104[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mmake_somefnresult!(testfnx, testfn02x, 5);[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m-----------------------------------------[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12many code following this expression is unreachable[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12min this macro invocation[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(unreachable_code)]` on by default[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: this warning originates in the macro `make_somefnresult` (in Nightly builds, run with -Z macro-backtrace for more info)[0m
+
+|:|none
+warning|:|src/main.rs|:|105|:|105|:|1|:|44|:|unreachable statement|:|[0m[1m[33mwarning[0m[0m[1m: unreachable statement[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:83:17[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m83[0m[0m  [0m[0m[1m[38;5;12m|[0m[0m [0m[0m                return Err(AppError::with_msg("thats too much"));[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m                 [0m[0m[1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[33munreachable statement[0m
+[0m[1m[38;5;12m...[0m
+[0m[1m[38;5;12m105[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mmake_somefnresult!(testfn02x, testfn03x, 5);[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m-------------------------------------------[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12many code following this expression is unreachable[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12min this macro invocation[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: this warning originates in the macro `make_somefnresult` (in Nightly builds, run with -Z macro-backtrace for more info)[0m
+
+|:|none
+warning|:|src/main.rs|:|82|:|82|:|9|:|33|:|unreachable statement|:|[0m[1m[33mwarning[0m[0m[1m: unreachable statement[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:83:17[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m83[0m[0m  [0m[0m[1m[38;5;12m|[0m[0m [0m[0m                return Err(AppError::with_msg("thats too much"));[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m                 [0m[0m[1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[33munreachable statement[0m
+[0m[1m[38;5;12m...[0m
+[0m[1m[38;5;12m105[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mmake_somefnresult!(testfn02x, testfn03x, 5);[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m-------------------------------------------[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12many code following this expression is unreachable[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12min this macro invocation[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: this warning originates in the macro `make_somefnresult` (in Nightly builds, run with -Z macro-backtrace for more info)[0m
+
+|:|none
+warning|:|src/main.rs|:|106|:|106|:|1|:|45|:|unreachable statement|:|[0m[1m[33mwarning[0m[0m[1m: unreachable statement[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:83:17[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m83[0m[0m  [0m[0m[1m[38;5;12m|[0m[0m [0m[0m                return Err(AppError::with_msg("thats too much"));[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m                 [0m[0m[1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[33munreachable statement[0m
+[0m[1m[38;5;12m...[0m
+[0m[1m[38;5;12m106[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mmake_somefnresult!(testfn03x, somefnmidx, 5);[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m--------------------------------------------[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12many code following this expression is unreachable[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12min this macro invocation[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: this warning originates in the macro `make_somefnresult` (in Nightly builds, run with -Z macro-backtrace for more info)[0m
+
+|:|none
+warning|:|src/main.rs|:|82|:|82|:|9|:|33|:|unreachable statement|:|[0m[1m[33mwarning[0m[0m[1m: unreachable statement[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:83:17[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m83[0m[0m  [0m[0m[1m[38;5;12m|[0m[0m [0m[0m                return Err(AppError::with_msg("thats too much"));[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m                 [0m[0m[1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[33munreachable statement[0m
+[0m[1m[38;5;12m...[0m
+[0m[1m[38;5;12m106[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mmake_somefnresult!(testfn03x, somefnmidx, 5);[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m--------------------------------------------[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12many code following this expression is unreachable[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12min this macro invocation[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: this warning originates in the macro `make_somefnresult` (in Nightly builds, run with -Z macro-backtrace for more info)[0m
+
+|:|none
+warning|:|src/main.rs|:|108|:|108|:|1|:|44|:|unreachable statement|:|[0m[1m[33mwarning[0m[0m[1m: unreachable statement[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:83:17[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m83[0m[0m  [0m[0m[1m[38;5;12m|[0m[0m [0m[0m                return Err(AppError::with_msg("thats too much"));[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m                 [0m[0m[1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[33munreachable statement[0m
+[0m[1m[38;5;12m...[0m
+[0m[1m[38;5;12m108[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mmake_somefnresult!(testfn04x, testfn05x, 5);[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m-------------------------------------------[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12many code following this expression is unreachable[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12min this macro invocation[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: this warning originates in the macro `make_somefnresult` (in Nightly builds, run with -Z macro-backtrace for more info)[0m
+
+|:|none
+warning|:|src/main.rs|:|82|:|82|:|9|:|33|:|unreachable statement|:|[0m[1m[33mwarning[0m[0m[1m: unreachable statement[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:83:17[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m83[0m[0m  [0m[0m[1m[38;5;12m|[0m[0m [0m[0m                return Err(AppError::with_msg("thats too much"));[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m                 [0m[0m[1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[33munreachable statement[0m
+[0m[1m[38;5;12m...[0m
+[0m[1m[38;5;12m108[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mmake_somefnresult!(testfn04x, testfn05x, 5);[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m-------------------------------------------[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12many code following this expression is unreachable[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12min this macro invocation[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: this warning originates in the macro `make_somefnresult` (in Nightly builds, run with -Z macro-backtrace for more info)[0m
+
+|:|none
+warning|:|src/main.rs|:|109|:|109|:|1|:|44|:|unreachable statement|:|[0m[1m[33mwarning[0m[0m[1m: unreachable statement[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:83:17[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m83[0m[0m  [0m[0m[1m[38;5;12m|[0m[0m [0m[0m                return Err(AppError::with_msg("thats too much"));[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m                 [0m[0m[1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[33munreachable statement[0m
+[0m[1m[38;5;12m...[0m
+[0m[1m[38;5;12m109[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mmake_somefnresult!(testfn05x, somefn01x, 5);[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m-------------------------------------------[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12many code following this expression is unreachable[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12min this macro invocation[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: this warning originates in the macro `make_somefnresult` (in Nightly builds, run with -Z macro-backtrace for more info)[0m
+
+|:|none
+warning|:|src/main.rs|:|82|:|82|:|9|:|33|:|unreachable statement|:|[0m[1m[33mwarning[0m[0m[1m: unreachable statement[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:83:17[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m83[0m[0m  [0m[0m[1m[38;5;12m|[0m[0m [0m[0m                return Err(AppError::with_msg("thats too much"));[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m                 [0m[0m[1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[33munreachable statement[0m
+[0m[1m[38;5;12m...[0m
+[0m[1m[38;5;12m109[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mmake_somefnresult!(testfn05x, somefn01x, 5);[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m-------------------------------------------[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12many code following this expression is unreachable[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12min this macro invocation[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: this warning originates in the macro `make_somefnresult` (in Nightly builds, run with -Z macro-backtrace for more info)[0m
+
+|:|none
+warning|:|src/main.rs|:|114|:|114|:|9|:|14|:|unused variable: `new_i`|:|[0m[1m[33mwarning[0m[0m[1m: unused variable: `new_i`[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:114:9[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m114[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let new_i = inputv + 1;[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m         [0m[0m[1m[33m^^^^^[0m[0m [0m[0m[1m[33mhelp: if this is intentional, prefix it with an underscore: `_new_i`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(unused_variables)]` on by default[0m
+
+|:|none
+help|:|src/main.rs|:|114|:|114|:|9|:|14|:|if this is intentional, prefix it with an underscore|:|none|:|_new_i
+warning|:|src/main.rs|:|58|:|58|:|1|:|34|:|function `testfn` is never used|:|[0m[1m[33mwarning[0m[0m[1m: function `testfn` is never used[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:58:14[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m58[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mmake_somefn!(testfn, testfn02, 5);[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m              [0m[0m[1m[33m^^^^^^[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(dead_code)]` on by default[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: this warning originates in the macro `make_somefn` (in Nightly builds, run with -Z macro-backtrace for more info)[0m
+
+|:|none
+warning|:|src/main.rs|:|59|:|59|:|1|:|36|:|function `testfn02` is never used|:|[0m[1m[33mwarning[0m[0m[1m: function `testfn02` is never used[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:59:14[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m59[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mmake_somefn!(testfn02, testfn03, 5);[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m              [0m[0m[1m[33m^^^^^^^^[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: this warning originates in the macro `make_somefn` (in Nightly builds, run with -Z macro-backtrace for more info)[0m
+
+|:|none
+warning|:|src/main.rs|:|60|:|60|:|1|:|36|:|function `testfn03` is never used|:|[0m[1m[33mwarning[0m[0m[1m: function `testfn03` is never used[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:60:14[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m60[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mmake_somefn!(testfn03, testfn04, 5);[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m              [0m[0m[1m[33m^^^^^^^^[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: this warning originates in the macro `make_somefn` (in Nightly builds, run with -Z macro-backtrace for more info)[0m
+
+|:|none
+warning|:|src/main.rs|:|62|:|62|:|1|:|36|:|function `testfn04` is never used|:|[0m[1m[33mwarning[0m[0m[1m: function `testfn04` is never used[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:62:14[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m62[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mmake_somefn!(testfn04, testfn05, 5);[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m              [0m[0m[1m[33m^^^^^^^^[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: this warning originates in the macro `make_somefn` (in Nightly builds, run with -Z macro-backtrace for more info)[0m
+
+|:|none
+warning|:|src/main.rs|:|63|:|63|:|1|:|36|:|function `testfn05` is never used|:|[0m[1m[33mwarning[0m[0m[1m: function `testfn05` is never used[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:63:14[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m63[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mmake_somefn!(testfn05, somefn01, 5);[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m              [0m[0m[1m[33m^^^^^^^^[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: this warning originates in the macro `make_somefn` (in Nightly builds, run with -Z macro-backtrace for more info)[0m
+
+|:|none
+warning|:|src/main.rs|:|65|:|65|:|4|:|12|:|function `somefn01` is never used|:|[0m[1m[33mwarning[0m[0m[1m: function `somefn01` is never used[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:65:4[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m65[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mfn somefn01(inputv: usize) -> usize {[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m    [0m[0m[1m[33m^^^^^^^^[0m
+
+|:|none
+warning|:|src/main.rs|:|128|:|128|:|10|:|21|:|function `init_forest` is never used|:|[0m[1m[33mwarning[0m[0m[1m: function `init_forest` is never used[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:128:10[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m128[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0masync fn init_forest() {[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m          [0m[0m[1m[33m^^^^^^^^^^^[0m
+
+|:|none
+warning|:|src/main.rs|:|143|:|143|:|4|:|14|:|function `simple_tag` is never used|:|[0m[1m[33mwarning[0m[0m[1m: function `simple_tag` is never used[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:143:4[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m143[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mfn simple_tag(event: &Event) -> Option<Tag> {[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m    [0m[0m[1m[33m^^^^^^^^^^[0m
+
+|:|none
+warning|:|src/main.rs|:|104|:|104|:|1|:|42|:|unreachable statement|:|[0m[1m[33mwarning[0m[0m[1m: unreachable statement[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:83:17[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m83[0m[0m  [0m[0m[1m[38;5;12m|[0m[0m [0m[0m                return Err(AppError::with_msg("thats too much"));[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m                 [0m[0m[1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[33munreachable statement[0m
+[0m[1m[38;5;12m...[0m
+[0m[1m[38;5;12m104[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mmake_somefnresult!(testfnx, testfn02x, 5);[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m-----------------------------------------[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12many code following this expression is unreachable[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12min this macro invocation[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(unreachable_code)]` on by default[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: this warning originates in the macro `make_somefnresult` (in Nightly builds, run with -Z macro-backtrace for more info)[0m
+
+|:|none
+warning|:|src/main.rs|:|82|:|82|:|9|:|33|:|unreachable statement|:|[0m[1m[33mwarning[0m[0m[1m: unreachable statement[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:83:17[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m83[0m[0m  [0m[0m[1m[38;5;12m|[0m[0m [0m[0m                return Err(AppError::with_msg("thats too much"));[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m                 [0m[0m[1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[33munreachable statement[0m
+[0m[1m[38;5;12m...[0m
+[0m[1m[38;5;12m104[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mmake_somefnresult!(testfnx, testfn02x, 5);[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m-----------------------------------------[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12many code following this expression is unreachable[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12min this macro invocation[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(unreachable_code)]` on by default[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: this warning originates in the macro `make_somefnresult` (in Nightly builds, run with -Z macro-backtrace for more info)[0m
+
+|:|none
+warning|:|src/main.rs|:|105|:|105|:|1|:|44|:|unreachable statement|:|[0m[1m[33mwarning[0m[0m[1m: unreachable statement[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:83:17[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m83[0m[0m  [0m[0m[1m[38;5;12m|[0m[0m [0m[0m                return Err(AppError::with_msg("thats too much"));[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m                 [0m[0m[1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[33munreachable statement[0m
+[0m[1m[38;5;12m...[0m
+[0m[1m[38;5;12m105[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mmake_somefnresult!(testfn02x, testfn03x, 5);[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m-------------------------------------------[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12many code following this expression is unreachable[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12min this macro invocation[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: this warning originates in the macro `make_somefnresult` (in Nightly builds, run with -Z macro-backtrace for more info)[0m
+
+|:|none
+warning|:|src/main.rs|:|82|:|82|:|9|:|33|:|unreachable statement|:|[0m[1m[33mwarning[0m[0m[1m: unreachable statement[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:83:17[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m83[0m[0m  [0m[0m[1m[38;5;12m|[0m[0m [0m[0m                return Err(AppError::with_msg("thats too much"));[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m                 [0m[0m[1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[33munreachable statement[0m
+[0m[1m[38;5;12m...[0m
+[0m[1m[38;5;12m105[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mmake_somefnresult!(testfn02x, testfn03x, 5);[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m-------------------------------------------[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12many code following this expression is unreachable[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12min this macro invocation[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: this warning originates in the macro `make_somefnresult` (in Nightly builds, run with -Z macro-backtrace for more info)[0m
+
+|:|none
+warning|:|src/main.rs|:|106|:|106|:|1|:|45|:|unreachable statement|:|[0m[1m[33mwarning[0m[0m[1m: unreachable statement[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:83:17[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m83[0m[0m  [0m[0m[1m[38;5;12m|[0m[0m [0m[0m                return Err(AppError::with_msg("thats too much"));[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m                 [0m[0m[1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[33munreachable statement[0m
+[0m[1m[38;5;12m...[0m
+[0m[1m[38;5;12m106[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mmake_somefnresult!(testfn03x, somefnmidx, 5);[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m--------------------------------------------[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12many code following this expression is unreachable[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12min this macro invocation[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: this warning originates in the macro `make_somefnresult` (in Nightly builds, run with -Z macro-backtrace for more info)[0m
+
+|:|none
+warning|:|src/main.rs|:|82|:|82|:|9|:|33|:|unreachable statement|:|[0m[1m[33mwarning[0m[0m[1m: unreachable statement[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:83:17[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m83[0m[0m  [0m[0m[1m[38;5;12m|[0m[0m [0m[0m                return Err(AppError::with_msg("thats too much"));[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m                 [0m[0m[1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[33munreachable statement[0m
+[0m[1m[38;5;12m...[0m
+[0m[1m[38;5;12m106[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mmake_somefnresult!(testfn03x, somefnmidx, 5);[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m--------------------------------------------[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12many code following this expression is unreachable[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12min this macro invocation[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: this warning originates in the macro `make_somefnresult` (in Nightly builds, run with -Z macro-backtrace for more info)[0m
+
+|:|none
+warning|:|src/main.rs|:|108|:|108|:|1|:|44|:|unreachable statement|:|[0m[1m[33mwarning[0m[0m[1m: unreachable statement[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:83:17[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m83[0m[0m  [0m[0m[1m[38;5;12m|[0m[0m [0m[0m                return Err(AppError::with_msg("thats too much"));[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m                 [0m[0m[1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[33munreachable statement[0m
+[0m[1m[38;5;12m...[0m
+[0m[1m[38;5;12m108[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mmake_somefnresult!(testfn04x, testfn05x, 5);[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m-------------------------------------------[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12many code following this expression is unreachable[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12min this macro invocation[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: this warning originates in the macro `make_somefnresult` (in Nightly builds, run with -Z macro-backtrace for more info)[0m
+
+|:|none
+warning|:|src/main.rs|:|82|:|82|:|9|:|33|:|unreachable statement|:|[0m[1m[33mwarning[0m[0m[1m: unreachable statement[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:83:17[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m83[0m[0m  [0m[0m[1m[38;5;12m|[0m[0m [0m[0m                return Err(AppError::with_msg("thats too much"));[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m                 [0m[0m[1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[33munreachable statement[0m
+[0m[1m[38;5;12m...[0m
+[0m[1m[38;5;12m108[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mmake_somefnresult!(testfn04x, testfn05x, 5);[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m-------------------------------------------[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12many code following this expression is unreachable[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12min this macro invocation[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: this warning originates in the macro `make_somefnresult` (in Nightly builds, run with -Z macro-backtrace for more info)[0m
+
+|:|none
+warning|:|src/main.rs|:|109|:|109|:|1|:|44|:|unreachable statement|:|[0m[1m[33mwarning[0m[0m[1m: unreachable statement[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:83:17[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m83[0m[0m  [0m[0m[1m[38;5;12m|[0m[0m [0m[0m                return Err(AppError::with_msg("thats too much"));[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m                 [0m[0m[1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[33munreachable statement[0m
+[0m[1m[38;5;12m...[0m
+[0m[1m[38;5;12m109[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mmake_somefnresult!(testfn05x, somefn01x, 5);[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m-------------------------------------------[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12many code following this expression is unreachable[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12min this macro invocation[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: this warning originates in the macro `make_somefnresult` (in Nightly builds, run with -Z macro-backtrace for more info)[0m
+
+|:|none
+warning|:|src/main.rs|:|82|:|82|:|9|:|33|:|unreachable statement|:|[0m[1m[33mwarning[0m[0m[1m: unreachable statement[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:83:17[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m83[0m[0m  [0m[0m[1m[38;5;12m|[0m[0m [0m[0m                return Err(AppError::with_msg("thats too much"));[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m                 [0m[0m[1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[33munreachable statement[0m
+[0m[1m[38;5;12m...[0m
+[0m[1m[38;5;12m109[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mmake_somefnresult!(testfn05x, somefn01x, 5);[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m-------------------------------------------[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12many code following this expression is unreachable[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12min this macro invocation[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: this warning originates in the macro `make_somefnresult` (in Nightly builds, run with -Z macro-backtrace for more info)[0m
+
+|:|none
+warning|:|src/main.rs|:|114|:|114|:|9|:|14|:|unused variable: `new_i`|:|[0m[1m[33mwarning[0m[0m[1m: unused variable: `new_i`[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:114:9[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m114[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let new_i = inputv + 1;[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m         [0m[0m[1m[33m^^^^^[0m[0m [0m[0m[1m[33mhelp: if this is intentional, prefix it with an underscore: `_new_i`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(unused_variables)]` on by default[0m
+
+|:|none
+help|:|src/main.rs|:|114|:|114|:|9|:|14|:|if this is intentional, prefix it with an underscore|:|none|:|_new_i
+warning|:|src/main.rs|:|58|:|58|:|1|:|34|:|function `testfn` is never used|:|[0m[1m[33mwarning[0m[0m[1m: function `testfn` is never used[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:58:14[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m58[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mmake_somefn!(testfn, testfn02, 5);[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m              [0m[0m[1m[33m^^^^^^[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(dead_code)]` on by default[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: this warning originates in the macro `make_somefn` (in Nightly builds, run with -Z macro-backtrace for more info)[0m
+
+|:|none
+warning|:|src/main.rs|:|59|:|59|:|1|:|36|:|function `testfn02` is never used|:|[0m[1m[33mwarning[0m[0m[1m: function `testfn02` is never used[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:59:14[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m59[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mmake_somefn!(testfn02, testfn03, 5);[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m              [0m[0m[1m[33m^^^^^^^^[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: this warning originates in the macro `make_somefn` (in Nightly builds, run with -Z macro-backtrace for more info)[0m
+
+|:|none
+warning|:|src/main.rs|:|60|:|60|:|1|:|36|:|function `testfn03` is never used|:|[0m[1m[33mwarning[0m[0m[1m: function `testfn03` is never used[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:60:14[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m60[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mmake_somefn!(testfn03, testfn04, 5);[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m              [0m[0m[1m[33m^^^^^^^^[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: this warning originates in the macro `make_somefn` (in Nightly builds, run with -Z macro-backtrace for more info)[0m
+
+|:|none
+warning|:|src/main.rs|:|62|:|62|:|1|:|36|:|function `testfn04` is never used|:|[0m[1m[33mwarning[0m[0m[1m: function `testfn04` is never used[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:62:14[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m62[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mmake_somefn!(testfn04, testfn05, 5);[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m              [0m[0m[1m[33m^^^^^^^^[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: this warning originates in the macro `make_somefn` (in Nightly builds, run with -Z macro-backtrace for more info)[0m
+
+|:|none
+warning|:|src/main.rs|:|63|:|63|:|1|:|36|:|function `testfn05` is never used|:|[0m[1m[33mwarning[0m[0m[1m: function `testfn05` is never used[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:63:14[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m63[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mmake_somefn!(testfn05, somefn01, 5);[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m              [0m[0m[1m[33m^^^^^^^^[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: this warning originates in the macro `make_somefn` (in Nightly builds, run with -Z macro-backtrace for more info)[0m
+
+|:|none
+warning|:|src/main.rs|:|65|:|65|:|4|:|12|:|function `somefn01` is never used|:|[0m[1m[33mwarning[0m[0m[1m: function `somefn01` is never used[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:65:4[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m65[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mfn somefn01(inputv: usize) -> usize {[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m    [0m[0m[1m[33m^^^^^^^^[0m
+
+|:|none
+warning|:|src/main.rs|:|128|:|128|:|10|:|21|:|function `init_forest` is never used|:|[0m[1m[33mwarning[0m[0m[1m: function `init_forest` is never used[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:128:10[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m128[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0masync fn init_forest() {[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m          [0m[0m[1m[33m^^^^^^^^^^^[0m
+
+|:|none
+warning|:|src/main.rs|:|143|:|143|:|4|:|14|:|function `simple_tag` is never used|:|[0m[1m[33mwarning[0m[0m[1m: function `simple_tag` is never used[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:143:4[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m143[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mfn simple_tag(event: &Event) -> Option<Tag> {[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m    [0m[0m[1m[33m^^^^^^^^^^[0m
+
+|:|none
+warning|:|src/errors.rs|:|47|:|47|:|9|:|14|:|unused doc comment|:|[0m[1m[33mwarning[0m[0m[1m: unused doc comment[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/errors.rs:46:9[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m46[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m        ///SPANDOC: hope it wil work[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m         [0m[0m[1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m[1m[38;5;12m47[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m        &self[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m         [0m[0m[1m[38;5;12m-----[0m[0m [0m[0m[1m[38;5;12mrustdoc does not generate documentation for expressions[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: use `//` for a plain comment[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(unused_doc_comments)]` on by default[0m
+
+|:|none
+warning|:|src/errors.rs|:|46|:|46|:|9|:|37|:|unused doc comment|:|[0m[1m[33mwarning[0m[0m[1m: unused doc comment[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/errors.rs:46:9[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m46[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m        ///SPANDOC: hope it wil work[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m         [0m[0m[1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m[1m[38;5;12m47[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m        &self[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m         [0m[0m[1m[38;5;12m-----[0m[0m [0m[0m[1m[38;5;12mrustdoc does not generate documentation for expressions[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: use `//` for a plain comment[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(unused_doc_comments)]` on by default[0m
+
+|:|none
+warning|:|src/init.rs|:|6|:|6|:|22|:|28|:|unused import: `traits`|:|[0m[1m[33mwarning[0m[0m[1m: unused import: `traits`[0m
+[0m [0m[0m[1m[38;5;12m--> [0m[0msrc/init.rs:6:22[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m6[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0muse tracing_forest::{traits::*, util::*};[0m
+[0m  [0m[0m[1m[38;5;12m|[0m[0m                      [0m[0m[1m[33m^^^^^^[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m  [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(unused_imports)]` on by default[0m
+
+|:|none
+warning|:|src/errors.rs|:|39|:|39|:|13|:|22|:|unused variable: `curr_span`|:|[0m[1m[33mwarning[0m[0m[1m: unused variable: `curr_span`[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/errors.rs:39:13[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m39[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m        let curr_span = Span::current();[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m             [0m[0m[1m[33m^^^^^^^^^[0m[0m [0m[0m[1m[33mhelp: if this is intentional, prefix it with an underscore: `_curr_span`[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(unused_variables)]` on by default[0m
+
+|:|none
+help|:|src/errors.rs|:|39|:|39|:|13|:|22|:|if this is intentional, prefix it with an underscore|:|none|:|_curr_span
+warning|:|src/init.rs|:|58|:|58|:|9|:|12|:|unused variable: `tag`|:|[0m[1m[33mwarning[0m[0m[1m: unused variable: `tag`[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/init.rs:58:9[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m58[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let tag = tracing_forest::Tag::builder()[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m         [0m[0m[1m[33m^^^[0m[0m [0m[0m[1m[33mhelp: if this is intentional, prefix it with an underscore: `_tag`[0m
+
+|:|none
+help|:|src/init.rs|:|58|:|58|:|9|:|12|:|if this is intentional, prefix it with an underscore|:|none|:|_tag
