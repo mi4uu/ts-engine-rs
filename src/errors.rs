@@ -1,7 +1,7 @@
 use color_eyre::Report;
 use std::fmt::{Debug, Display};
 // use deno_core::error::format_location;
-use tracing::{error, Span};
+use tracing::{Span, error};
 #[allow(unused)]
 use tracing_subscriber::prelude::*;
 

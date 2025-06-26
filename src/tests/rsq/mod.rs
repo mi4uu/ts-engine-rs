@@ -23,7 +23,7 @@ mod tests {
     #[tokio::test]
     async fn test_main_ts_execution() {
         let mut engine = TypeScriptEngine::new().expect("Failed to create engine");
-        let result = engine.execute_main_ts();
+        let result = engine.execute_main_ts_with_path(Some("src/tests/rsq/main.ts"));
 
         match result {
             Ok(output) => {
@@ -76,7 +76,7 @@ mod tests {
     #[tokio::test]
     async fn test_console_output_format() {
         let mut engine = TypeScriptEngine::new().expect("Failed to create engine");
-        let result = engine.execute_main_ts();
+        let result = engine.execute_main_ts_with_path(Some("src/tests/rsq/main.ts"));
 
         match result {
             Ok(output) => {

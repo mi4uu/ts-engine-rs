@@ -3,7 +3,6 @@ use tracing::instrument;
 use tracing_subscriber::prelude::*;
 use tracing_subscriber::{layer::SubscriberExt, util::SubscriberInitExt};
 
-
 use crate::errors::AppError;
 
 #[tracing::instrument]
@@ -26,8 +25,6 @@ fn install_tracing() {
     let filter_layer = EnvFilter::try_from_default_env()
         // .or_else(|_| EnvFilter::try_new("info")) .unwrap();
         .unwrap_or_else(|_| "ts_engine_rs=debug,info".into());
-
-
 
     let forest_layer = tracing_tree::HierarchicalLayer::default()
         .with_writer(std::io::stdout)

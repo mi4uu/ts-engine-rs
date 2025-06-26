@@ -15,7 +15,7 @@ use ts_engine_rs::{
 async fn main() -> AppResult<()> {
     // init().map_err(AppError::from)?;
     init()?;
-  
+
     let mut runtime = JsRuntime::new(RuntimeOptions::default());
     let code = "let a = 1+4; a*2";
     info!("example usage of eval of code:\n\t{}\n", &code);

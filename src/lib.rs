@@ -104,12 +104,29 @@ impl TypeScriptEngine {
 
     /// Execute TypeScript code from main.ts file (simplified - treats as JavaScript)
     pub fn execute_main_ts(&mut self) -> Result<String, Box<dyn std::error::Error>> {
-        // Read main.ts file
-        let main_ts_content = std::fs::read_to_string("crates/ts-engine/main.ts")
-            .or_else(|_| std::fs::read_to_string("main.ts"))
-            .or_else(|_| std::fs::read_to_string("../main.ts"))
-            .or_else(|_| std::fs::read_to_string("../../crates/ts-engine/main.ts"))
-            .map_err(|e| format!("Failed to read main.ts from any location: {}", e))?;
+        self.execute_main_ts_with_path(None)
+    }
+
+    /// Execute TypeScript code from main.ts file with optional custom path
+    pub fn execute_main_ts_with_path(
+        &mut self,
+        main_ts_path: Option<&str>,
+    ) -> Result<String, Box<dyn std::error::Error>> {
+        // Read main.ts file - use provided path or fall back to default search locations
+        let main_ts_content = if let Some(path) = main_ts_path {
+            std::fs::read_to_string(path).map_err(|e| {
+                format!(
+                    "Failed to read main.ts from specified path '{}': {}",
+                    path, e
+                )
+            })?
+        } else {
+            std::fs::read_to_string("crates/ts-engine/main.ts")
+                .or_else(|_| std::fs::read_to_string("main.ts"))
+                .or_else(|_| std::fs::read_to_string("../main.ts"))
+                .or_else(|_| std::fs::read_to_string("../../crates/ts-engine/main.ts"))
+                .map_err(|e| format!("Failed to read main.ts from any location: {}", e))?
+        };
 
         // Simple TypeScript to JavaScript conversion (remove types and convert imports)
         let js_code = self.simple_ts_to_js(&main_ts_content);
