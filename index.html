@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" id="oranda" class="dark">
+  <head>
+    <title>ts-engine-rs</title>
+    
+    
+      <link rel="icon" href="/favicon.ico" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ts-engine-rs" />
+    
+    
+    
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+    <link rel="stylesheet" href="/oranda-v0.6.1.css" />
+    
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-body">
+        
+
+        <main>
+          <header>
+            
+            <h1 class="title">ts-engine-rs</h1>
+            
+          </header>
+
+          
+
+
+    <h1>ts-engine-rs: TypeScript Execution Engine with Blockchain Integration</h1>
+<p><a href="https://www.rust-lang.org" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Rust-1.78.0-orange.svg" alt="Rust"></a>
+<a href="LICENSE" rel="noopener noreferrer"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License"></a>
+<a href="https://crates.io/crates/ts-engine-rs" rel="noopener noreferrer"><img src="https://img.shields.io/crates/v/ts-engine-rs.svg" alt="Crates.io"></a></p>
+<h2>Overview</h2>
+<p><code>ts-engine-rs</code> is a high-performance TypeScript execution engine built in Rust, designed to provide seamless TypeScript and JavaScript execution with built-in blockchain capabilities. Leveraging Deno's V8 runtime, this library offers a powerful solution for developers seeking dynamic scripting within Rust applications.</p>
+<h3>Key Features</h3>
+<ul>
+<li>🚀 <strong>TypeScript Execution</strong>: Execute TypeScript and JavaScript code directly in Rust</li>
+<li>🔗 <strong>Blockchain Integration</strong>: Built-in support for rsquared-js blockchain library</li>
+<li>🌐 <strong>V8 Runtime</strong>: Powered by Deno's V8 engine for high-performance execution</li>
+<li>🔍 <strong>Console Capture</strong>: Comprehensive console output formatting</li>
+<li>⏳ <strong>Async Support</strong>: Full async/await and timer functionality</li>
+<li>🔐 <strong>Blockchain Key Generation</strong>: Private and public key generation utilities</li>
+</ul>
+<h2>Quick Start</h2>
+<h3>Installation</h3>
+<p>Add <code>ts-engine-rs</code> to your <code>Cargo.toml</code>:</p>
+<pre style="background-color:#263238;"><span style="color:#89ddff;">[dependencies]
+</span><span style="color:#f07178;">ts-engine-rs </span><span style="color:#89ddff;">= "</span><span style="color:#c3e88d;">0.1.0</span><span style="color:#89ddff;">"
+</span></pre>
+
+<h3>Basic Usage</h3>
+<h4>JavaScript Evaluation</h4>
+<pre style="background-color:#263238;"><span style="color:#c792ea;">use </span><span style="color:#eeffff;">ts_engine_rs</span><span style="color:#89ddff;">::</span><span style="color:#eeffff;">eval</span><span style="color:#89ddff;">;
+</span><span style="color:#eeffff;">
+</span><span style="font-style:italic;color:#c792ea;">fn </span><span style="color:#82aaff;">main</span><span style="color:#89ddff;">() -&gt; </span><span style="color:#eeffff;">Result</span><span style="color:#89ddff;">&lt;()</span><span style="color:#eeffff;">, Box</span><span style="color:#89ddff;">&lt;</span><span style="color:#eeffff;">dyn std</span><span style="color:#89ddff;">::</span><span style="color:#eeffff;">error</span><span style="color:#89ddff;">::</span><span style="color:#eeffff;">Error</span><span style="color:#89ddff;">&gt;&gt; {
+</span><span style="color:#eeffff;">    </span><span style="font-style:italic;color:#c792ea;">let</span><span style="color:#eeffff;"> result </span><span style="color:#89ddff;">= </span><span style="color:#82aaff;">eval</span><span style="color:#89ddff;">("</span><span style="color:#c3e88d;">console.log('Hello, TypeScript!'); 2 + 2</span><span style="color:#89ddff;">")?;
+</span><span style="color:#eeffff;">    println!</span><span style="color:#89ddff;">("</span><span style="color:#c3e88d;">Result: </span><span style="color:#eeffff;">{}</span><span style="color:#89ddff;">",</span><span style="color:#eeffff;"> result</span><span style="color:#89ddff;">);
+</span><span style="color:#eeffff;">    </span><span style="color:#ffcb6b;">Ok</span><span style="color:#89ddff;">(())
+</span><span style="color:#89ddff;">}
+</span></pre>
+
+<h4>TypeScript Execution with Blockchain</h4>
+<pre style="background-color:#263238;"><span style="color:#c792ea;">use </span><span style="color:#eeffff;">ts_engine_rs</span><span style="color:#89ddff;">::</span><span style="color:#eeffff;">TypeScriptEngine</span><span style="color:#89ddff;">;
+</span><span style="color:#eeffff;">
+</span><span style="font-style:italic;color:#c792ea;">fn </span><span style="color:#82aaff;">main</span><span style="color:#89ddff;">() -&gt; </span><span style="color:#eeffff;">Result</span><span style="color:#89ddff;">&lt;()</span><span style="color:#eeffff;">, Box</span><span style="color:#89ddff;">&lt;</span><span style="color:#eeffff;">dyn std</span><span style="color:#89ddff;">::</span><span style="color:#eeffff;">error</span><span style="color:#89ddff;">::</span><span style="color:#eeffff;">Error</span><span style="color:#89ddff;">&gt;&gt; {
+</span><span style="color:#eeffff;">    </span><span style="font-style:italic;color:#c792ea;">let </span><span style="color:#c792ea;">mut</span><span style="color:#eeffff;"> engine </span><span style="color:#89ddff;">= </span><span style="color:#eeffff;">TypeScriptEngine</span><span style="color:#89ddff;">::</span><span style="color:#eeffff;">new</span><span style="color:#89ddff;">();
+</span><span style="color:#eeffff;">    
+</span><span style="color:#eeffff;">    </span><span style="font-style:italic;color:#546e7a;">// Execute TypeScript with blockchain integration
+</span><span style="color:#eeffff;">    </span><span style="font-style:italic;color:#c792ea;">let</span><span style="color:#eeffff;"> script </span><span style="color:#89ddff;">= </span><span style="font-style:italic;color:#c792ea;">r</span><span style="color:#89ddff;">#</span><span style="color:#c3e88d;">"
+</span><span style="color:#c3e88d;">        import * as rsq from "rsquared-js";
+</span><span style="color:#c3e88d;">        let seed = "your brain key seed";
+</span><span style="color:#c3e88d;">        let privateKey = rsq.PrivateKey.fromSeed(seed);
+</span><span style="color:#c3e88d;">        console.log(privateKey.toWif());
+</span><span style="color:#c3e88d;">    </span><span style="color:#89ddff;">"#;
+</span><span style="color:#eeffff;">    
+</span><span style="color:#eeffff;">    engine.</span><span style="color:#82aaff;">execute_main_ts</span><span style="color:#89ddff;">(</span><span style="color:#eeffff;">script</span><span style="color:#89ddff;">)?;
+</span><span style="color:#eeffff;">    </span><span style="color:#ffcb6b;">Ok</span><span style="color:#89ddff;">(())
+</span><span style="color:#89ddff;">}
+</span></pre>
+
+<h2>Features in Depth</h2>
+<h3>TypeScript Execution</h3>
+<ul>
+<li>Simplified TypeScript-to-JavaScript conversion</li>
+<li>Direct execution of TypeScript and JavaScript code</li>
+<li>Console output capture and formatting</li>
+<li>Async/await and timer support</li>
+</ul>
+<h3>Blockchain Integration</h3>
+<ul>
+<li>Private/public key generation</li>
+<li>Integration with rsquared-js blockchain library</li>
+<li>Support for GraphQL-based blockchain operations</li>
+<li>Key generation from brain keys</li>
+</ul>
+<h2>Error Handling</h2>
+<p><code>ts-engine-rs</code> uses <code>color-eyre</code> and <code>thiserror</code> for robust error management:</p>
+<pre style="background-color:#263238;"><span style="color:#c792ea;">use </span><span style="color:#eeffff;">ts_engine_rs</span><span style="color:#89ddff;">::</span><span style="color:#eeffff;">TSEngineError</span><span style="color:#89ddff;">;
+</span><span style="color:#eeffff;">
+</span><span style="font-style:italic;color:#546e7a;">// Comprehensive error types with context
+</span><span style="font-style:italic;color:#c792ea;">match </span><span style="color:#82aaff;">eval</span><span style="color:#89ddff;">("</span><span style="color:#c3e88d;">invalid typescript</span><span style="color:#89ddff;">") {
+</span><span style="color:#eeffff;">    </span><span style="color:#ffcb6b;">Ok</span><span style="color:#89ddff;">(_) =&gt; </span><span style="color:#eeffff;">println!</span><span style="color:#89ddff;">("</span><span style="color:#c3e88d;">Execution successful</span><span style="color:#89ddff;">"),
+</span><span style="color:#eeffff;">    </span><span style="color:#ffcb6b;">Err</span><span style="color:#89ddff;">(</span><span style="color:#eeffff;">e</span><span style="color:#89ddff;">) =&gt; </span><span style="color:#eeffff;">eprintln!</span><span style="color:#89ddff;">("</span><span style="color:#c3e88d;">Execution failed: {}</span><span style="color:#89ddff;">",</span><span style="color:#eeffff;"> e</span><span style="color:#89ddff;">),
+</span><span style="color:#89ddff;">}
+</span></pre>
+
+<h2>Performance and Dependencies</h2>
+<ul>
+<li><strong>Runtime</strong>: Deno V8 engine</li>
+<li><strong>Async Runtime</strong>: Tokio</li>
+<li><strong>Serialization</strong>: Serde</li>
+<li><strong>Error Handling</strong>: color-eyre, thiserror</li>
+<li><strong>Logging</strong>: tracing ecosystem</li>
+</ul>
+<h2>Testing</h2>
+<p>Run the comprehensive test suite:</p>
+<pre style="background-color:#263238;"><span style="color:#82aaff;">cargo test
+</span></pre>
+
+<p>Test coverage includes:</p>
+<ul>
+<li>Basic JavaScript evaluation</li>
+<li>TypeScript engine initialization</li>
+<li>Console output formatting</li>
+<li>TypeScript-to-JavaScript conversion</li>
+<li>Blockchain key generation</li>
+</ul>
+<h2>Contributing</h2>
+<ol>
+<li>Fork the repository</li>
+<li>Create a feature branch</li>
+<li>Commit your changes</li>
+<li>Push to the branch</li>
+<li>Create a Pull Request</li>
+</ol>
+<p>Please read our <a href="CONTRIBUTING.md" rel="noopener noreferrer">CONTRIBUTING.md</a> for details on our code of conduct and the process for submitting pull requests.</p>
+<h2>License</h2>
+<p>This project is licensed under the MIT License - see the <a href="LICENSE" rel="noopener noreferrer">LICENSE</a> file for details.</p>
+<h2>Acknowledgments</h2>
+<ul>
+<li><a href="https://deno.land/" rel="noopener noreferrer">Deno</a> for the V8 runtime</li>
+<li><a href="https://github.com/r-squared-project" rel="noopener noreferrer">rsquared-js</a> blockchain library</li>
+</ul>
+<h2>Contact</h2>
+<p>For questions, issues, or discussions, please open an issue on our GitHub repository.</p>
+
+
+
+        </main>
+      </div>
+
+      <footer>
+        
+        <span>
+          ts-engine-rs
+        </span>
+      </footer>
+    </div>
+
+    
+    
+
+    
+
+
+  </body>
+</html>
