@@ -1,7 +1,7 @@
 # ts-engine-rs: TypeScript Execution Engine with Blockchain Integration
 
 [![Rust](https://img.shields.io/badge/Rust-1.78.0-orange.svg)](https://www.rust-lang.org)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License-AGPL--3.0-blue.svg)](LICENSE)
 [![Crates.io](https://img.shields.io/crates/v/ts-engine-rs.svg)](https://crates.io/crates/ts-engine-rs)
 
 ## Overview
@@ -126,14 +126,29 @@ Test coverage includes:
 
 Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
 
+## Support
+
+If this project saves you time, you can buy me a coffee:
+
+[![Sponsor on GitHub](https://img.shields.io/badge/Sponsor-mi4uu-ec4899?logo=github-sponsors&logoColor=white)](https://github.com/sponsors/mi4uu)
+[![PayPal](https://img.shields.io/badge/PayPal-mi4uuuu-00457C?logo=paypal&logoColor=white)](https://www.paypal.com/paypalme/mi4uuuu)
+
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+AGPL-3.0-or-later, see the [LICENSE](LICENSE) file for details.
+
+Need it in a closed-source product, or can't meet the AGPL terms? Commercial licences are available on request: get in touch via [lipinski.work](https://lipinski.work).
+
+By sending a pull request you agree that your contribution may be offered under both the AGPL and a commercial licence.
 
 ## Acknowledgments
 
 - [Deno](https://deno.land/) for the V8 runtime
 - [rsquared-js](https://github.com/r-squared-project) blockchain library
+
+## Author
+
+Made by [Michał Lipiński](https://lipinski.work) ([GitHub](https://github.com/mi4uu)).
 
 ## Contact
 
