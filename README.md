@@ -137,6 +137,8 @@ If this project saves you time, you can buy me a coffee:
 
 AGPL-3.0-or-later, see the [LICENSE](LICENSE) file for details.
 
+`src/tests/rsq/rsq_dist/` is a built copy of [R-Squared-js](https://github.com/R-Squared-Project/R-Squared-js) and keeps its own MIT licence, see [its LICENSE](src/tests/rsq/rsq_dist/LICENSE).
+
 Need it in a closed-source product, or can't meet the AGPL terms? Commercial licences are available on request: get in touch via [lipinski.work](https://lipinski.work).
 
 By sending a pull request you agree that your contribution may be offered under both the AGPL and a commercial licence.
